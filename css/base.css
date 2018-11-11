@@ -260,6 +260,10 @@ figure.effect2:hover img{
   font-weight: bold;
   font-size: 16px;
 }
+#resume {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12px;
+}
 .fly-in-text{
   list-style: none;
   position: absolute;
