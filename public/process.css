@@ -1,0 +1,172 @@
+#container{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  position: relative;
+  top: 70px;
+}
+img{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Enriqueta', serif;
+}
+a {
+  text-decoration: none;
+  color: lightgrey;
+}
+#ball{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#aball:hover{
+  color: grey;
+}
+#aball:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#aball:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#golf{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#agolf:hover{
+  color: grey;
+}
+#agolf:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#agolf:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#shoes{
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+#ashoes:hover{
+  color: grey;
+}
+#ashoes:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#ashoes:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#onlyme{
+  position: absolute;
+  bottom: 0;
+  right:0;
+}
+#ame:hover{
+  color: grey;
+}
+#ame:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#ame:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#design{
+  position: absolute;
+  display:block;
+  text-align:center;
+  top: 250px;
+  left: 420px;
+  font-size: 3em;
+  letter-spacing: 15px;
+}
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.fade-in{
+  animation: fadeIn 4s;
+}
+.fade-in-rest{
+  animation: fadeIn 8s;
+}
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}

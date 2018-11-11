@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>home</title>
+    <link rel="stylesheet" href="base.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Enriqueta|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+      $(document).ready(function(){
+        setTimeout(function(){
+          $('.fly-in-text').removeClass('hidden');
+        }, 500);
+      })();
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.ml12').each(function(){
+          $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+        });
+
+        anime.timeline({loop: true})
+        .add({
+          targets: '.ml12 .letter',
+          translateX: [40,0],
+          translateZ: 0,
+          opacity: [0,1],
+          easing: "easeOutExpo",
+          duration: 1200,
+          delay: function(el, i) {
+            return 500 + 30 * i;
+          }
+        }).add({
+          targets: '.ml12 .letter',
+          translateX: [0,-30],
+          opacity: [1,0],
+          easing: "easeInExpo",
+          duration: 5000,
+          delay: function(el, i) {
+            return 100 + 30 * i;
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container1">
+      <div id="name" class="fade-in">
+        <a class="ml12" id="paul" href="/">Paul Park</a>
+      </div>
+      <div id="about" class="fade-in">
+        <a id="a" class="hvr-float" href='/about'>About</a>
+      </div>
+      <div id="contact" class="fade-in">
+        <a id="c" class="hvr-float" href='/contact'>Contact</a>
+      </div>
+      <div id="process" class="fade-in" class="hvr-float">
+        <ul class="fly-in-text hidden">
+          <a id="p" class="hvr-float"href='/process'>
+            <li>T</li>
+            <li>h</li>
+            <li>e</li>
+            <li> </li>
+            <li>P</li>
+            <li>r</li>
+            <li>o</li>
+            <li>c</li>
+            <li>e</li>
+            <li>s</li>
+            <li>s</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

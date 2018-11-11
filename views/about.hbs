@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="base.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Enriqueta|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.ml12').each(function(){
+      $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    });
+
+    anime.timeline({loop: true})
+    .add({
+      targets: '.ml12 .letter',
+      translateX: [40,0],
+      translateZ: 0,
+      opacity: [0,1],
+      easing: "easeOutExpo",
+      duration: 1200,
+      delay: function(el, i) {
+        return 500 + 30 * i;
+      }
+    }).add({
+      targets: '.ml12 .letter',
+      translateX: [0,-30],
+      opacity: [1,0],
+      easing: "easeInExpo",
+      duration: 5000,
+      delay: function(el, i) {
+        return 100 + 30 * i;
+      }
+    });
+  });
+</script>
+<div id="container1">
+  <div id="name" class="fade-in">
+    <a class="ml12" id="paul" href="/">Paul Park</a>
+  </div>
+  <div id="info" class="fade-in">
+    Welcome to my personal site! My name is Paul and I am from La Crescenta, California. I'm currently 22 years old and I graduated from New York University with a B.S. in Computer Science and minor in Web Development.
+    </br>
+    </br>
+    I currently started working as an IT/Software Developer for My.Suit located in New York, NY.
+     of LA.
+    </br>
+    </br>
+    To reach me please refer to my contact page below! Thanks!
+  </div>
+  <div style="position:absolute;left:70px;top:600px;"id="about" class="fade-in">
+    <a class="hvr-float" id="a" href='/about'>About</a>
+  </div>
+  <div style="position:absolute;left:130px;"id="contact" class="fade-in">
+    <a class="hvr-float" id="c" href='/contact'>Contact</a>
+  </div>
+  <figure class="effect1"><img class="fade-in"id="me" src="me.jpg" alt="pic of me"></figure>
+  <figure class="effect2"><img class="fade-in"id="me2" src="me2.jpg" alt="pic of me"></figure>
+</div>

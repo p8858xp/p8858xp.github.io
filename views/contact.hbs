@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="base.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Enriqueta|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.ml12').each(function(){
+      $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    });
+
+    anime.timeline({loop: true})
+    .add({
+      targets: '.ml12 .letter',
+      translateX: [40,0],
+      translateZ: 0,
+      opacity: [0,1],
+      easing: "easeOutExpo",
+      duration: 1200,
+      delay: function(el, i) {
+        return 500 + 30 * i;
+      }
+    }).add({
+      targets: '.ml12 .letter',
+      translateX: [0,-30],
+      opacity: [1,0],
+      easing: "easeInExpo",
+      duration: 5000,
+      delay: function(el, i) {
+        return 100 + 30 * i;
+      }
+    });
+  });
+</script>
+<div id="container1">
+  <div id="name" class="fade-in">
+    <a class="ml12" id="paul" href="/">Paul Park</a>
+  </div>
+  <div id=container-info class="fade-in">
+    <span id='cont'>Contact</span>
+    <div id="email">
+      paul-park-63-@gmail.com
+    </div>
+    </br>
+    </br>
+    <span id='social'>Social Media</span>
+    <div id="insta">
+      Instagram: paul_pedroprk
+    </div>
+    </br>
+    </br>
+    <span id='connect'>Connect</span>
+    <div id="linkedin">
+      <a id="alink" class="hvr-underline-from-left" href="https://www.linkedin.com/in/paul-park-394026102/" target="_blank">https://www.linkedin.com/in/paul-park-394026102/</a>
+    </div>
+    <div id="git">
+      <a id="agit" class="hvr-underline-from-left"href="https://github.com/p8858xp"target="_blank">https://github.com/p8858xp</a>
+    </div>
+  </div>
+  <div style="position:absolute;left:70px;"id="about" class="fade-in">
+    <a class="hvr-float" id="a" href='/about'>About</a>
+  </div>
+  <div style="position:absolute;left:130px;top:600px;"id="contact" class="fade-in">
+    <a class="hvr-float" id="c" href='/contact'>Contact</a>
+  </div>
+</div>
