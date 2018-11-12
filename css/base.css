@@ -130,7 +130,6 @@ body{
   display: inline-block;
   line-height: 1em;
 }
-
 #info{
   width: 450px;
   height: 350px;
@@ -138,7 +137,6 @@ body{
   top: 180px;
   left: 70px;
   font-family: 'Titillium Web', sans-serif;
-
 }
 figure.effect1{
   position:relative;

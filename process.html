@@ -6,14 +6,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
   $(document).ready(function(){
-
-  });
+    setTimeout(function(){
+      $('.fly-in-text').removeClass('hidden');
+    }, 500);
+  })();
 </script>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>design</title>
   </head>
   <body>
     <a href="javascript:history.go(-1)"><img class='fade-in-rest' src="img/backbutt.png"></a>
@@ -22,7 +24,19 @@
       <div id='golf' class='fade-in-rest'><a id="agolf"href="golf.html">GOLF</a></div>
       <div id='shoes' class='fade-in-rest'><a id="ashoes"href="shoes.html">SHOE</a></div>
       <div id='onlyme' class='fade-in-rest'><a id="ame"href="me.html">SUIT</a></div>
-      <div class="hvr-float" id="design"><span class='fade-in'>DESIGNS</span></div>
+      <div class="fade-in" class="hvr-float">
+        <ul class="fly-in-text hidden">
+          <a id="d" class="hvr-float" href='design.html'>
+            <li>D</li>
+            <li>E</li>
+            <li>S</li>
+            <li>I</li>
+            <li>G</li>
+            <li>N</li>
+            <li>S</li>
+          </a>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
