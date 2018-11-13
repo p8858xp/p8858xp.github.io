@@ -114,10 +114,6 @@ body{
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-#p{
-  text-decoration: none;
-  color: black;
-}
 #a:visited{
   color:black;
 }
@@ -296,3 +292,7 @@ figure.effect2:hover img{
 .fly-in-text.hidden li:nth-child(9){transform: translateX(0px) translateY(-200px);}
 .fly-in-text.hidden li:nth-child(10){transform: translateX(-500px) translateY(200px);}
 .fly-in-text.hidden li:nth-child(11){transform: translateX(100px) translateY(80px);}
+#p{
+  text-decoration: none;
+  color: black;
+}
