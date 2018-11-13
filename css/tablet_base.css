@@ -264,6 +264,7 @@ figure.effect2:hover img{
   top: 300px;
   left: 710px;
   transform: translateX(-30%) translateY(-30%);
+  text-align: center;
 }
 .fly-in-text li{
   margin-right:15px;
@@ -295,4 +296,7 @@ figure.effect2:hover img{
 #p{
   text-decoration: none;
   color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
 }

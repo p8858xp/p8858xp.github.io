@@ -37,13 +37,13 @@ body{
 }
 #about {
   position: fixed;
-  top: 690px;
+  top: 600px;
   left: 30px;
   font-family: 'Titillium Web', sans-serif;
 }
 #contact {
   position: fixed;
-  top: 690px;
+  top: 600px;
   left: 90px;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -298,4 +298,6 @@ figure.effect2:hover img{
   color: black;
   width: 500px;
   height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
 }
