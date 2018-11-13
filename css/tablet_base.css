@@ -29,7 +29,7 @@ body{
   overflow: hidden;
 }
 #name {
-  position: fixed;
+  position: relative;
   top: 70px;
   left: 70px;
   font-family: 'Raleway', sans-serif;
@@ -299,4 +299,8 @@ figure.effect2:hover img{
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
+}
+#pdfresume{
+  text-decoration: none;
+  color: black;
 }
