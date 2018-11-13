@@ -181,9 +181,9 @@ figure.effect2:hover img{
 }
 #container-info{
   position: relative;
-  top: 120px;
+  top: 90px;
   left: 70px;
-  width: 500px;
+  width: 450px;
 }
 #agit{
   text-decoration: none;
@@ -227,37 +227,37 @@ figure.effect2:hover img{
   right: 0;
 }
 #cont{
-  font-size: 8px;
+  font-size: 7px;
   font-family: 'Titillium Web', sans-serif;
 }
 #email{
   font-weight: bold;
-  font-size: 12px;
+  font-size: 9px;
 }
 #social{
   font-family: 'Titillium Web', sans-serif;
-  font-size: 8px;
+  font-size: 7px;
 }
 #insta{
   font-weight: bold;
-  font-size: 12px;
+  font-size: 9px;
 }
 #connect{
   font-family: 'Titillium Web', sans-serif;
-  font-size: 8px;
+  font-size: 7px;
 }
 #git{
   font-weight: bold;
-  font-size: 12px;
+  font-size: 9px;
   line-height: 2.0;
 }
 #linkedin{
   font-weight: bold;
-  font-size: 12px;
+  font-size: 9px;
 }
 #resume {
   font-family: 'Titillium Web', sans-serif;
-  font-size: 8px;
+  font-size: 7px;
 }
 .fly-in-text{
   list-style: none;
