@@ -37,13 +37,13 @@ body{
 }
 #about {
   position: fixed;
-  top: 600px;
+  top: 500px;
   left: 30px;
   font-family: 'Titillium Web', sans-serif;
 }
 #contact {
   position: fixed;
-  top: 600px;
+  top: 500px;
   left: 90px;
   font-family: 'Titillium Web', sans-serif;
 }
