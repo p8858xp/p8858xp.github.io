@@ -170,7 +170,7 @@
 .contact {
   padding: 2em 5em;
   &__subheader {
-    font-size: $fs-subheader;
+    font-size: 1.5rem;
   }
   &__inner {
     display: flex;
@@ -181,7 +181,6 @@
     margin: 0 auto;
     margin-top: 2em;
     background: #cacaca;
-    //background: $bg-secondary;
     color: #fff;
     border-radius: 0.25rem;
   }

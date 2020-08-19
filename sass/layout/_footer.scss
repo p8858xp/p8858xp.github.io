@@ -11,5 +11,9 @@
   &__social-link {
     margin: 0 1em;
     cursor: pointer;
+    transition: 0.3s ease-in;
+    &:hover {
+      color: #fff;
+    }
   }
 }

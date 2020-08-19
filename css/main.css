@@ -120,6 +120,11 @@ img {
 .footer__social-link {
   margin: 0 1em;
   cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.footer__social-link:hover {
+  color: #fff;
 }
 
 .banner__bgimg {
@@ -238,15 +243,15 @@ img {
 }
 
 .experience .skills .skill__level--js {
-  width: 80%;
+  width: 90%;
 }
 
 .experience .skills .skill__level--python {
-  width: 90%;
+  width: 50%;
 }
 
 .experience .skills .skill__level--java {
-  width: 90%;
+  width: 60%;
 }
 
 .experience .skills .skill__level--vue {
@@ -254,11 +259,11 @@ img {
 }
 
 .experience .skills .skill__level--react {
-  width: 90%;
+  width: 70%;
 }
 
 .experience .skills .skill__level--node {
-  width: 90%;
+  width: 70%;
 }
 
 .experience .skills .skill__level--jquery {
@@ -266,15 +271,15 @@ img {
 }
 
 .experience .skills .skill__level--cms {
-  width: 90%;
+  width: 70%;
 }
 
 .experience .skills .skill__level--git {
-  width: 90%;
+  width: 80%;
 }
 
 .experience .skills .skill__level--mongo {
-  width: 80%;
+  width: 60%;
 }
 
 .projects {
@@ -324,7 +329,7 @@ img {
 }
 
 .contact__subheader {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .contact__inner {
