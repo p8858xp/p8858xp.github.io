@@ -10,15 +10,14 @@
 .about {
   background-color: $bg-secondary;
   color: #fff;
+  &__header {
+    color: #fff;
+  }
   &__container {
     padding: 2em 5em;
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-  }
-  header {
-    font-size: $fs-header;
-    letter-spacing: 0.5rem;
   }
   &__content {
     margin-top: 2em;
@@ -26,31 +25,27 @@
   }
 }
 .experience {
-  background-color: $bg-primary;
-  color: #fff;
+  //background-color: $bg-primary;
+  //   color: #a7a7a7;
+  color: #6387fd;
   &__container {
     padding: 2em 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  &__header {
-    font-size: $fs-header;
-    text-align: center;
-    letter-spacing: 0.5rem;
-  }
   &__content {
     margin-top: 2rem;
     max-width: 70%;
   }
   &__block {
-    margin-top: 2rem;
+    margin: 2rem 0;
     display: flex;
     align-items: baseline;
-    background-color: $bg-accent;
+    //background-color: $bg-accent;
     border-radius: 0.25rem;
     padding: 2em;
-    border: 2px solid #28c7fa;
+    border: 2px solid #6387fd;
     .title {
       font-size: 2rem;
     }
@@ -65,6 +60,7 @@
   &__subheader {
     font-size: $fs-subheader;
     flex: 0 0 50%;
+    letter-spacing: 0.25rem;
   }
   &__company {
     margin-bottom: 2rem;
@@ -78,6 +74,9 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 1em;
+      &__name {
+        font-size: 1.2rem;
+      }
       &__bar {
         position: relative;
         background: grey;
@@ -99,7 +98,111 @@
         &--js {
           width: $js-width;
         }
+        &--python {
+          width: $python-width;
+        }
+        &--java {
+          width: $java-width;
+        }
+        &--vue {
+          width: $vue-width;
+        }
+        &--react {
+          width: $react-width;
+        }
+        &--node {
+          width: $node-width;
+        }
+        &--jquery {
+          width: $jquery-width;
+        }
+        &--cms {
+          width: $cms-width;
+        }
+        &--git {
+          width: $git-width;
+        }
+        &--mongo {
+          width: $mongo-width;
+        }
       }
+    }
+  }
+}
+.projects {
+  padding: 2em 5em;
+  min-height: 100vh;
+  color: #fff;
+  &__header {
+    //color: #6387fd;
+  }
+  &__title {
+    font-size: $fs-header;
+  }
+  &__desc {
+    font-size: 1rem;
+    margin-top: 1em;
+    line-height: 170%;
+  }
+  &__button {
+    display: inline-block;
+    font-size: $fs-small;
+    padding: 0.5em 2em;
+    background: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #fff;
+    margin: 2rem 2rem 0 0;
+    transition: 0.2s ease-in;
+    &:hover {
+      background: #fff;
+      color: #6387fd;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+}
+.contact {
+  padding: 2em 5em;
+  &__subheader {
+    font-size: $fs-subheader;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
+    padding: 2em 1em;
+    margin: 0 auto;
+    margin-top: 2em;
+    background: #cacaca;
+    //background: $bg-secondary;
+    color: #fff;
+    border-radius: 0.25rem;
+  }
+  &__img {
+    width: 12rem;
+    height: 12rem;
+  }
+  img {
+    border-radius: 50%;
+  }
+  &__list {
+    list-style: none;
+    line-height: 200%;
+    li {
+      margin: 1em;
+    }
+  }
+  &__email {
+    transition: 0.3s ease-out;
+    &:hover {
+      color: #ff304f;
     }
   }
 }

@@ -1,0 +1,40 @@
+.projects__slider {
+  display: flex;
+}
+.projects__block {
+  width: 350px;
+  height: 500px;
+  margin: 50px;
+  background: #6387fd;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.projects__info {
+  display: flex;
+  height: 500px;
+  padding: 6em 3em;
+}
+.projects__l,
+.projects__r {
+  flex: 0 0 50%;
+}
+.slick-prev,
+.slick-next {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: #ff304f;
+  transition: 0.3s ease-out;
+  //   width: 50px;
+  //   height: 50px;
+}
+.slick-prev,
+.slick-next:focus {
+  outline: none;
+}
+.slick-prev:hover,
+.slick-next:hover {
+  transform: scale(2);
+}

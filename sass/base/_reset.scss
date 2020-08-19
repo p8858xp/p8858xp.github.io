@@ -1,5 +1,25 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: $font-primary;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.header {
+  font-size: $fs-header;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  color: #444444;
 }

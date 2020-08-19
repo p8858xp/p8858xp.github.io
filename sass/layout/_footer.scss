@@ -1,3 +1,15 @@
-h1 {
-  color: red;
+.footer {
+  display: flex;
+  padding: 1.5em 5em;
+  background: #012a58;
+  color: #6387fd;
+  justify-content: space-between;
+  &__social-links {
+    list-style: none;
+    display: flex;
+  }
+  &__social-link {
+    margin: 0 1em;
+    cursor: pointer;
+  }
 }
