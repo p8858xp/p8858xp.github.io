@@ -1,2 +1,17 @@
-@import "layout/header";
+// abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// base
+@import "base/typography";
+@import "base/reset";
+
+// components
+@import "components/buttons";
+
+// layout
+@import "layout/navbar";
 @import "layout/footer";
+
+//  pages
+@import "pages/home";

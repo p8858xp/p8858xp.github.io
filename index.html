@@ -7,11 +7,115 @@
     <title>home</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
-    <header>
-      TESTING
-    </header>
+    <navbar class="nav">
+      <header class="nav__header">Paul Park</header>
+      <ul class="nav__tabs">
+        <li class="nav__tab">About</li>
+        <li class="nav__tab">Experience</li>
+        <li class="nav__tab">Projects</li>
+        <li class="nav__tab">Contact</li>
+      </ul>
+    </navbar>
+
+    <section class="banner">
+      <div class="banner__bgimg"></div>
+    </section>
+
+    <section class="about">
+      <div class="about__container">
+        <header class="about__header">HELLO</header>
+        <div class="about__content">
+          <p>
+            My name is Paul and I am an LA native with a passion for technology.
+          </p>
+          <br />
+          <p>
+            My Bachelor's degree in Computer Science has exposed me to a lot of
+            fundamental concepts of programming, algorithms, databases and
+            operating systems.
+          </p>
+          <br />
+          <p>
+            My interest mostly lies in front end technologies, however I am not
+            one to say no to learning new things.
+          </p>
+          <br />
+        </div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <div class="experience__container">
+        <header class="experience__header">WHO I AM</header>
+        <div class="experience__content">
+          <div class="experience__block education">
+            <header class="experience__subheader">Education</header>
+            <div>
+              <p class="title">New York University</p>
+              <p class="location">College of Arts and Science</p>
+              <p class="dates">September 2014 - May 2018</p>
+              <p class="description">BA in Computer Science</p>
+            </div>
+          </div>
+          <div class="experience__block works">
+            <header class="experience__subheader">Experience</header>
+            <div class="experience__companies">
+              <div class="experience__company">
+                <p class="title">Front End Engineer</p>
+                <p class="location">Hylink Digital Group</p>
+                <p class="dates">Jan 2020 - April 2020</p>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
+                  quasi voluptatum aut harum nulla corrupti voluptates quos
+                  dolore molestias quaerat sit doloribus officia earum laborum
+                  temporibus laboriosam adipisci minus odio.
+                </p>
+              </div>
+              <div class="experience__company">
+                <p class="title">Junior Web Engineer</p>
+                <p class="location">Paolucci Salling & Martin</p>
+                <p class="dates">June 2019 - Jan 2020</p>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
+                  tempora nisi qui nesciunt? Quos nobis rerum possimus, labore
+                  amet excepturi nemo, nostrum eligendi dolorum vel vitae fugiat
+                  ipsum nam in.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="experience__block skills">
+            <header class="experience__subheader">Skills</header>
+            <div class="skills__container">
+              <div class="skill">
+                <div class="skill__name">HTML</div>
+                <div class="skill__bar">
+                  <span class="skill__level skill__level--html"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__name">CSS/SCSS</div>
+                <div class="skill__bar">
+                  <span class="skill__level skill__level--css"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__name">JavaScript</div>
+                <div class="skill__bar">
+                  <span class="skill__level skill__level--js"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
