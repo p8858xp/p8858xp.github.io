@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: $font-primary;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
@@ -19,7 +22,6 @@ img {
 }
 .header {
   font-size: $fs-header;
-  letter-spacing: 0.25rem;
   text-align: center;
   color: #444444;
 }

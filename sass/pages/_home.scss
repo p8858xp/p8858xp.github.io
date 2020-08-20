@@ -25,9 +25,7 @@
   }
 }
 .experience {
-  //background-color: $bg-primary;
-  //   color: #a7a7a7;
-  color: #6387fd;
+  color: #eeff09;
   &__container {
     padding: 2em 5em;
     display: flex;
@@ -42,10 +40,8 @@
     margin: 2rem 0;
     display: flex;
     align-items: baseline;
-    //background-color: $bg-accent;
-    border-radius: 0.25rem;
+    background-color: $bg-accent;
     padding: 2em;
-    border: 2px solid #6387fd;
     .title {
       font-size: 2rem;
     }
@@ -60,7 +56,8 @@
   &__subheader {
     font-size: $fs-subheader;
     flex: 0 0 50%;
-    letter-spacing: 0.25rem;
+    //letter-spacing: 0.25rem;
+    text-transform: uppercase;
   }
   &__company {
     margin-bottom: 2rem;
@@ -133,11 +130,9 @@
   padding: 2em 5em;
   min-height: 100vh;
   color: #fff;
-  &__header {
-    //color: #6387fd;
-  }
   &__title {
     font-size: $fs-header;
+    color: #eeff09;
   }
   &__desc {
     font-size: 1rem;
@@ -151,12 +146,13 @@
     background: none;
     border-radius: 1.5rem;
     cursor: pointer;
-    border: 2px solid #fff;
+    border: 2px solid #eeff09;
+    color: #eeff09 !important;
     margin: 2rem 2rem 0 0;
     transition: 0.2s ease-in;
     &:hover {
-      background: #fff;
-      color: #6387fd;
+      background: #eeff09;
+      color: #6387fd !important;
     }
     &:focus {
       outline: 0;

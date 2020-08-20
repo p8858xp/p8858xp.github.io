@@ -2,7 +2,7 @@
   display: flex;
   padding: 1.5em 5em;
   background: #012a58;
-  color: #6387fd;
+  color: #ff304f;
   justify-content: space-between;
   &__social-links {
     list-style: none;
@@ -13,7 +13,7 @@
     cursor: pointer;
     transition: 0.3s ease-in;
     &:hover {
-      color: #fff;
+      color: #eeff09;
     }
   }
 }

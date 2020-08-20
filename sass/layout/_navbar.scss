@@ -4,10 +4,10 @@
   justify-content: space-between;
   padding: 1.5em 5em;
   background: $bg-primary;
-  color: #6387fd;
   &__header {
     font-size: 2rem;
     letter-spacing: 2px;
+    color: #ff304f;
   }
   &__tabs {
     display: flex;
@@ -17,9 +17,12 @@
   &__tab {
     margin: 0 2em;
     letter-spacing: 1px;
-    transition: 0.3s ease-out;
-    &:hover {
-      color: #fff;
+    a {
+      color: #ff304f;
+      transition: 0.3s all ease-in;
+      &:hover {
+        color: #eeff09;
+      }
     }
   }
 }

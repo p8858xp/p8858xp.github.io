@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -18,15 +19,51 @@
     ></script>
     <script src="js/slick.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <navbar class="nav">
-      <header class="nav__header">Paul Park</header>
+      <header
+        class="nav__header"
+        data-aos="fade-right"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
+        Paul Park
+      </header>
       <ul class="nav__tabs">
-        <li class="nav__tab"><a href="#about">About</a></li>
-        <li class="nav__tab"><a href="#experience">Experience</a></li>
-        <li class="nav__tab"><a href="#projects">Projects</a></li>
-        <li class="nav__tab"><a href="#contact">Contact</a></li>
+        <li
+          class="nav__tab"
+          data-aos="fade-left"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
+          <a href="#about">About</a>
+        </li>
+        <li
+          class="nav__tab"
+          data-aos="fade-left"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+        >
+          <a href="#experience">Experience</a>
+        </li>
+        <li
+          class="nav__tab"
+          data-aos="fade-left"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          <a href="#projects">Projects</a>
+        </li>
+        <li
+          class="nav__tab"
+          data-aos="fade-left"
+          data-aos-delay="600"
+          data-aos-duration="1000"
+        >
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </navbar>
 
@@ -36,8 +73,19 @@
 
     <section class="about" id="about">
       <div class="about__container">
-        <header class="header about__header">HELLO</header>
-        <div class="about__content">
+        <header
+          class="header about__header"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          HELLO
+        </header>
+        <div
+          class="about__content"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
           <p>
             My name is Paul and I am an LA native with a passion for technology.
           </p>
@@ -59,11 +107,28 @@
 
     <section class="experience" id="experience">
       <div class="experience__container">
-        <header class="header experience__header">WHO I AM</header>
+        <header
+          class="header experience__header"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          WHO I AM
+        </header>
         <div class="experience__content">
           <div class="experience__block education">
-            <header class="experience__subheader">Education</header>
-            <div>
+            <header
+              class="experience__subheader"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              Education
+            </header>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
               <p class="title">New York University</p>
               <p class="location">College of Arts and Science</p>
               <p class="dates">September 2014 - May 2018</p>
@@ -71,9 +136,21 @@
             </div>
           </div>
           <div class="experience__block works">
-            <header class="experience__subheader">Experience</header>
+            <header
+              class="experience__subheader"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              Experience
+            </header>
             <div class="experience__companies">
-              <div class="experience__company">
+              <div
+                class="experience__company"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 <p class="title">Front End Engineer</p>
                 <p class="location">Hylink Digital Group</p>
                 <p class="dates">Jan 2020 - April 2020</p>
@@ -84,7 +161,12 @@
                   temporibus laboriosam adipisci minus odio.
                 </p>
               </div>
-              <div class="experience__company">
+              <div
+                class="experience__company"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 <p class="title">Junior Web Engineer</p>
                 <p class="location">Paolucci Salling & Martin</p>
                 <p class="dates">June 2019 - Jan 2020</p>
@@ -98,75 +180,142 @@
             </div>
           </div>
           <div class="experience__block skills">
-            <header class="experience__subheader">Skills</header>
+            <header
+              class="experience__subheader"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              Skills
+            </header>
             <div class="skills__container">
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">HTML</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--html"></span>
                 </div>
               </div>
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">CSS/SCSS</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--css"></span>
                 </div>
               </div>
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">JavaScript</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--js"></span>
                 </div>
               </div>
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="250"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">Python</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--python"></span>
                 </div>
               </div>
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">Java</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--java"></span>
                 </div>
               </div>
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="350"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">VueJS</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--vue"></span>
                 </div>
               </div>
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">React</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--react"></span>
                 </div>
               </div>
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="450"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">NodeJS</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--node"></span>
                 </div>
               </div>
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">JQuery</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--jquery"></span>
                 </div>
               </div>
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="550"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">Drupal/Craft</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--cms"></span>
                 </div>
               </div>
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="600"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">Git/GitHub</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--git"></span>
                 </div>
               </div>
-              <div class="skill">
+              <div
+                class="skill"
+                data-aos="fade-up"
+                data-aos-delay="650"
+                data-aos-duration="1000"
+              >
                 <div class="skill__name">MongoDB</div>
                 <div class="skill__bar">
                   <span class="skill__level skill__level--mongo"></span>
@@ -179,11 +328,28 @@
     </section>
 
     <section class="projects" id="projects">
-      <header class="header projects__header">PROJECTS</header>
-      <div class="projects__slider">
+      <header
+        class="header projects__header"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        PROJECTS
+      </header>
+      <div
+        class="projects__slider"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
         <div class="projects__block">
           <div class="projects__info">
-            <div class="projects__l">
+            <div
+              class="projects__l"
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
               <h1 class="projects__title">SLAM</h1>
               <p class="projects__desc">
                 A mock E-commerce site I created inspired by the SLAM basketball
@@ -203,14 +369,24 @@
                 >GitHub</a
               >
             </div>
-            <div class="projects__r">
+            <div
+              class="projects__r"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
               <img class="projects__image" src="/img/slam.png" alt="" />
             </div>
           </div>
         </div>
         <div class="projects__block">
           <div class="projects__info">
-            <div class="projects__l">
+            <div
+              class="projects__l"
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
               <h1 class="projects__title">Paul's Kitchen</h1>
               <p class="projects__desc">
                 A recipe book web app built with Angular that allows a user to
@@ -232,14 +408,24 @@
                 >GitHub</a
               >
             </div>
-            <div class="projects__r">
+            <div
+              class="projects__r"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
               <img class="projects__image" src="/img/recipe.png" alt="" />
             </div>
           </div>
         </div>
         <div class="projects__block">
           <div class="projects__info">
-            <div class="projects__l">
+            <div
+              class="projects__l"
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
               <h1 class="projects__title">Stock Trader App</h1>
               <p class="projects__desc">
                 A mini stock trader application built with VueJS and state
@@ -257,14 +443,24 @@
                 >GitHub</a
               >
             </div>
-            <div class="projects__r">
+            <div
+              class="projects__r"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
               <img class="projects__image" src="/img/stocktrader.png" alt="" />
             </div>
           </div>
         </div>
         <div class="projects__block">
           <div class="projects__info">
-            <div class="projects__l">
+            <div
+              class="projects__l"
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
               <h1 class="projects__title">AB Testing App</h1>
               <p class="projects__desc">
                 A mini-app that shows a user an image of either a red or blue
@@ -285,7 +481,12 @@
                 >GitHub</a
               >
             </div>
-            <div class="projects__r">
+            <div
+              class="projects__r"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
               <img class="projects__image" src="/img/abtest.png" alt="" />
             </div>
           </div>
@@ -293,7 +494,7 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <!-- <section class="contact" id="contact">
       <header class="header contact__header">
         CONTACT ME
       </header>
@@ -315,7 +516,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <footer class="footer">
       <header>© Copyright 2020 Paul Park.</header>
@@ -339,5 +540,9 @@
         </li>
       </ul>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

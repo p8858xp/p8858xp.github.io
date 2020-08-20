@@ -3,8 +3,6 @@ $(function () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
-    dots: false,
     prevArrow:
       "<button type='button' class='slick-prev pull-left'><i class='fas fa-chevron-left'></i></button>",
     nextArrow:
@@ -12,6 +10,4 @@ $(function () {
     centerMode: true,
     centerPadding: "0",
   });
-  //autoplay: true,
-  //autoplaySpeed: 5000,
 });

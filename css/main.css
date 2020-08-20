@@ -5,6 +5,10 @@
   font-family: "Alata", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -24,7 +28,6 @@ img {
 
 .header {
   font-size: 3rem;
-  letter-spacing: 0.25rem;
   text-align: center;
   color: #444444;
 }
@@ -60,7 +63,6 @@ img {
   border: 0;
   background: none;
   cursor: pointer;
-  color: #ff304f;
   transition: 0.3s ease-out;
 }
 
@@ -80,12 +82,12 @@ img {
   justify-content: space-between;
   padding: 1.5em 5em;
   background: #012a58;
-  color: #6387fd;
 }
 
 .nav__header {
   font-size: 2rem;
   letter-spacing: 2px;
+  color: #ff304f;
 }
 
 .nav__tabs {
@@ -97,18 +99,22 @@ img {
 .nav__tab {
   margin: 0 2em;
   letter-spacing: 1px;
-  transition: 0.3s ease-out;
 }
 
-.nav__tab:hover {
-  color: #fff;
+.nav__tab a {
+  color: #ff304f;
+  transition: 0.3s all ease-in;
+}
+
+.nav__tab a:hover {
+  color: #eeff09;
 }
 
 .footer {
   display: flex;
   padding: 1.5em 5em;
   background: #012a58;
-  color: #6387fd;
+  color: #ff304f;
   justify-content: space-between;
 }
 
@@ -124,7 +130,7 @@ img {
 }
 
 .footer__social-link:hover {
-  color: #fff;
+  color: #eeff09;
 }
 
 .banner__bgimg {
@@ -157,7 +163,7 @@ img {
 }
 
 .experience {
-  color: #6387fd;
+  color: #eeff09;
 }
 
 .experience__container {
@@ -176,9 +182,8 @@ img {
   margin: 2rem 0;
   display: flex;
   align-items: baseline;
-  border-radius: 0.25rem;
+  background-color: #13263c;
   padding: 2em;
-  border: 2px solid #6387fd;
 }
 
 .experience__block .title {
@@ -197,7 +202,7 @@ img {
 .experience__subheader {
   font-size: 2rem;
   flex: 0 0 50%;
-  letter-spacing: 0.25rem;
+  text-transform: uppercase;
 }
 
 .experience__company {
@@ -290,6 +295,7 @@ img {
 
 .projects__title {
   font-size: 3rem;
+  color: #eeff09;
 }
 
 .projects__desc {
@@ -305,14 +311,15 @@ img {
   background: none;
   border-radius: 1.5rem;
   cursor: pointer;
-  border: 2px solid #fff;
+  border: 2px solid #eeff09;
+  color: #eeff09 !important;
   margin: 2rem 2rem 0 0;
   transition: 0.2s ease-in;
 }
 
 .projects__button:hover {
-  background: #fff;
-  color: #6387fd;
+  background: #eeff09;
+  color: #6387fd !important;
 }
 
 .projects__button:focus {
