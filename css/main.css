@@ -64,7 +64,6 @@ img {
   background: none;
   cursor: pointer;
   transition: 0.3s ease-out;
-  transform: scale(2);
 }
 
 .slick-prev,
@@ -74,7 +73,7 @@ img {
 
 .slick-prev:hover,
 .slick-next:hover {
-  transform: scale(2.5);
+  transform: scale(2);
 }
 
 .nav {
