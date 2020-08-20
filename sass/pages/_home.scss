@@ -26,6 +26,10 @@
 }
 .experience {
   color: #eeff09;
+  background: $bg-accent;
+  &__header {
+    color: #fff;
+  }
   &__container {
     padding: 2em 5em;
     display: flex;
@@ -40,8 +44,7 @@
     margin: 2rem 0;
     display: flex;
     align-items: baseline;
-    background-color: $bg-accent;
-    padding: 2em;
+    padding: 2em 0;
     .title {
       font-size: 2rem;
     }

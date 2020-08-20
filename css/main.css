@@ -64,6 +64,7 @@ img {
   background: none;
   cursor: pointer;
   transition: 0.3s ease-out;
+  transform: scale(2);
 }
 
 .slick-prev,
@@ -73,7 +74,7 @@ img {
 
 .slick-prev:hover,
 .slick-next:hover {
-  transform: scale(2);
+  transform: scale(2.5);
 }
 
 .nav {
@@ -164,6 +165,11 @@ img {
 
 .experience {
   color: #eeff09;
+  background: #13263c;
+}
+
+.experience__header {
+  color: #fff;
 }
 
 .experience__container {
@@ -182,8 +188,7 @@ img {
   margin: 2rem 0;
   display: flex;
   align-items: baseline;
-  background-color: #13263c;
-  padding: 2em;
+  padding: 2em 0;
 }
 
 .experience__block .title {
