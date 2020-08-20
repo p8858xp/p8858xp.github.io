@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  padding: 1.5em 5em;
+  padding: $pad-small;
   background: #012a58;
   color: #ff304f;
   justify-content: space-between;
@@ -16,4 +16,8 @@
       color: #eeff09;
     }
   }
+}
+
+@media screen and (min-width: 992px) {
+  padding: $pad-large;
 }

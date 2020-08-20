@@ -14,7 +14,7 @@
     color: #fff;
   }
   &__container {
-    padding: 2em 5em;
+    padding: $pad-small;
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
@@ -31,22 +31,21 @@
     color: #fff;
   }
   &__container {
-    padding: 2em 5em;
+    padding: $pad-small;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   &__content {
     margin-top: 2rem;
-    max-width: 70%;
+    //max-width: 70%;
   }
   &__block {
     margin: 2rem 0;
-    display: flex;
-    align-items: baseline;
     padding: 2em 0;
     .title {
       font-size: 2rem;
+      margin-top: 1em;
     }
     .location {
       font-size: 1.5rem;
@@ -63,11 +62,12 @@
     text-transform: uppercase;
   }
   &__company {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   .skills {
     &__container {
       flex: 0 0 50%;
+      margin-top: 3em;
     }
     .skill {
       display: flex;
@@ -130,9 +130,13 @@
   }
 }
 .projects {
-  padding: 2em 5em;
+  padding: $pad-small;
   min-height: 100vh;
   color: #fff;
+  background-color: #6387fd;
+  &__header {
+    color: #fff;
+  }
   &__title {
     font-size: $fs-header;
     color: #eeff09;
@@ -167,7 +171,7 @@
   }
 }
 .contact {
-  padding: 2em 5em;
+  padding: $pad-large;
   &__subheader {
     font-size: 1.5rem;
   }
@@ -201,6 +205,41 @@
     transition: 0.3s ease-out;
     &:hover {
       color: #ff304f;
+    }
+  }
+}
+
+// responsive
+@media screen and (min-width: 992px) {
+  .about__container,
+  .experience__container,
+  .projects {
+    padding: $pad-large;
+  }
+  .projects {
+    background: none;
+    &__header {
+      color: #444444;
+    }
+  }
+  .experience {
+    &__content {
+      max-width: 85%;
+    }
+    &__block {
+      display: flex;
+      align-items: baseline;
+      .title {
+        margin-top: 0;
+      }
+    }
+    &__company {
+      margin-bottom: 3rem;
+    }
+    .skills {
+      &__container {
+        margin-top: 0;
+      }
     }
   }
 }

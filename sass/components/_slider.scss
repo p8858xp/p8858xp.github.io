@@ -3,8 +3,6 @@
 }
 .projects__block {
   width: 350px;
-  height: 500px;
-  margin: 50px;
   background: #6387fd;
   &:focus {
     outline: 0;
@@ -12,13 +10,15 @@
 }
 
 .projects__info {
-  display: flex;
-  height: 500px;
-  padding: 6em 3em;
+  margin-top: 2em;
+  padding: 0 2em;
 }
 .projects__l,
 .projects__r {
   flex: 0 0 50%;
+}
+.projects__r {
+  margin-top: 3em;
 }
 .slick-prev,
 .slick-next {
@@ -26,6 +26,13 @@
   background: none;
   cursor: pointer;
   transition: 0.3s ease-out;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+}
+.slick-prev {
+  left: -1rem;
 }
 .slick-prev,
 .slick-next:focus {
@@ -34,4 +41,26 @@
 .slick-prev:hover,
 .slick-next:hover {
   transform: scale(2);
+}
+
+@media screen and (min-width: 992px) {
+  .slick-prev,
+  .slick-next {
+    color: #000;
+  }
+  .projects {
+    &__info {
+      display: flex;
+      padding: 6em 3em;
+      margin-top: 0;
+      height: 500px;
+    }
+    &__r {
+      margin-top: 0;
+    }
+    &__block {
+      height: 500px;
+      margin: 50px;
+    }
+  }
 }
