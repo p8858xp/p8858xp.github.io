@@ -401,8 +401,14 @@ img {
   margin-top: 1em;
 }
 
+.experience__block .location,
+.experience__block .dates {
+  color: #fff;
+}
+
 .experience__block .description {
   margin-top: 1em;
+  color: #696969;
 }
 
 .experience__subheader {
