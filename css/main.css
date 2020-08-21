@@ -74,11 +74,12 @@ img {
   color: #fff;
   position: absolute;
   top: 50%;
-  right: -1rem;
+  right: 0;
 }
 
 .slick-prev {
-  left: -1rem;
+  left: 0;
+  z-index: 1;
 }
 
 .slick-prev,
@@ -495,7 +496,7 @@ img {
 }
 
 .projects {
-  padding: 1.5em 2em;
+  padding: 1.5em 0.5em;
   color: #fff;
   background-color: #6387fd;
 }
@@ -524,7 +525,7 @@ img {
   cursor: pointer;
   border: 2px solid #eeff09;
   color: #eeff09 !important;
-  margin: 2rem 2rem 0 0;
+  margin: 2rem 0.5rem 0 0;
   transition: 0.2s ease-in;
 }
 
@@ -598,6 +599,9 @@ img {
   }
   .projects__header {
     color: #444444;
+  }
+  .projects__button {
+    margin: 2rem 2rem 0 0;
   }
   .experience__content {
     max-width: 85%;

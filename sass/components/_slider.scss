@@ -29,10 +29,11 @@
   color: #fff;
   position: absolute;
   top: 50%;
-  right: -1rem;
+  right: 0;
 }
 .slick-prev {
-  left: -1rem;
+  left: 0;
+  z-index: 1;
 }
 .slick-prev,
 .slick-next:focus {

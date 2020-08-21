@@ -130,7 +130,7 @@
   }
 }
 .projects {
-  padding: $pad-small;
+  padding: 1.5em 0.5em;
   //min-height: 100vh;
   color: #fff;
   background-color: #6387fd;
@@ -155,7 +155,7 @@
     cursor: pointer;
     border: 2px solid #eeff09;
     color: #eeff09 !important;
-    margin: 2rem 2rem 0 0;
+    margin: 2rem 0.5rem 0 0;
     transition: 0.2s ease-in;
     &:hover {
       background: #eeff09;
@@ -218,6 +218,9 @@
     background: none;
     &__header {
       color: #444444;
+    }
+    &__button {
+      margin: 2rem 2rem 0 0;
     }
   }
   .experience {
