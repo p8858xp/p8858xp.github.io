@@ -29,10 +29,11 @@
   color: #fff;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 0.5rem;
 }
 .slick-prev {
-  left: 0;
+  left: 0.5rem;
+  z-index: 1;
 }
 .slick-prev:focus,
 .slick-next:focus {
@@ -40,7 +41,7 @@
 }
 .slick-prev:hover,
 .slick-next:hover {
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 @media screen and (min-width: 992px) {
