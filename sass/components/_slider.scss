@@ -64,3 +64,14 @@
     }
   }
 }
+
+@media screen and (min-width: 1500px) {
+  .projects {
+    &__info {
+      height: 600px;
+    }
+    &__block {
+      height: 600px;
+    }
+  }
+}

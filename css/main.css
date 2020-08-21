@@ -32,6 +32,12 @@ img {
   color: #444444;
 }
 
+@media screen and (min-width: 1500px) {
+  .header {
+    font-size: 4rem;
+  }
+}
+
 .projects__slider {
   display: flex;
 }
@@ -102,6 +108,15 @@ img {
   .projects__block {
     height: 500px;
     margin: 50px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .projects__info {
+    height: 600px;
+  }
+  .projects__block {
+    height: 600px;
   }
 }
 
@@ -195,6 +210,79 @@ img {
     opacity: 0;
     right: 5em;
   }
+}
+
+.overlay {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #eeff09;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s opacity ease-in;
+}
+
+.overlay .menu-close {
+  cursor: pointer;
+  position: absolute;
+  top: 1.3em;
+  right: 3em;
+  width: 50px;
+  height: 50px;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay .menu-close > div {
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay .menu-close > div:before, .overlay .menu-close > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  background: #ff304f;
+  transform: rotate(45deg);
+  transition: 0.3s ease-out;
+}
+
+.overlay .menu-close > div:hover:before, .overlay .menu-close > div:hover:after {
+  background: #6387fd;
+}
+
+.overlay .menu-close > div:after {
+  transform: rotate(-45deg);
+}
+
+.overlay__tabs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay__tab {
+  list-style: none;
+  margin: 2em 0;
+  font-size: 2rem;
+  color: #012a58;
+  transition: 0.3s ease-out;
+}
+
+.overlay__tab:hover {
+  color: #ff304f;
 }
 
 .footer {
@@ -504,6 +592,27 @@ img {
   }
   .experience .skills__container {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .about__content {
+    font-size: 1.5rem;
+  }
+  .experience__subheader {
+    font-size: 2.5rem;
+  }
+  .experience__block .title {
+    font-size: 2.5rem;
+  }
+  .experience__block .location {
+    font-size: 2rem;
+  }
+  .experience__block .description {
+    font-size: 1.25rem;
+  }
+  .projects__desc {
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

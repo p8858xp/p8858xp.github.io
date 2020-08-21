@@ -209,7 +209,7 @@
   }
 }
 
-// responsive
+// responsive desktop
 @media screen and (min-width: 992px) {
   .about__container,
   .experience__container,
@@ -240,6 +240,36 @@
       &__container {
         margin-top: 0;
       }
+    }
+  }
+}
+
+// large desktop
+@media screen and (min-width: 1500px) {
+  .about {
+    &__content {
+      font-size: 1.5rem;
+    }
+  }
+  .experience {
+    &__subheader {
+      font-size: 2.5rem;
+    }
+    &__block {
+      .title {
+        font-size: 2.5rem;
+      }
+      .location {
+        font-size: 2rem;
+      }
+      .description {
+        font-size: 1.25rem;
+      }
+    }
+  }
+  .projects {
+    &__desc {
+      font-size: 1.5rem;
     }
   }
 }
