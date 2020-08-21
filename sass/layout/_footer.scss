@@ -1,12 +1,24 @@
 .footer {
-  display: flex;
   padding: $pad-small;
   background: #012a58;
   color: #ff304f;
-  justify-content: space-between;
+  text-align: center;
+  &__phonemail {
+    p {
+      margin: 1em 0;
+    }
+    i {
+      margin-right: 1em;
+    }
+  }
+  header {
+    margin: 5em 0;
+  }
   &__social-links {
     list-style: none;
     display: flex;
+    justify-content: center;
+    margin: 1em 0;
   }
   &__social-link {
     margin: 0 1em;
@@ -19,5 +31,17 @@
 }
 
 @media screen and (min-width: 992px) {
-  padding: $pad-large;
+  .footer {
+    padding: $pad-large;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    header {
+      margin: 0;
+    }
+    &__social-links {
+      justify-content: start;
+    }
+  }
 }

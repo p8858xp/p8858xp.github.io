@@ -286,16 +286,29 @@ img {
 }
 
 .footer {
-  display: flex;
   padding: 1.5em 2em;
   background: #012a58;
   color: #ff304f;
-  justify-content: space-between;
+  text-align: center;
+}
+
+.footer__phonemail p {
+  margin: 1em 0;
+}
+
+.footer__phonemail i {
+  margin-right: 1em;
+}
+
+.footer header {
+  margin: 5em 0;
 }
 
 .footer__social-links {
   list-style: none;
   display: flex;
+  justify-content: center;
+  margin: 1em 0;
 }
 
 .footer__social-link {
@@ -309,7 +322,19 @@ img {
 }
 
 @media screen and (min-width: 992px) {
-  padding: 1.5em 5em;
+  .footer {
+    padding: 1.5em 5em;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+  }
+  .footer header {
+    margin: 0;
+  }
+  .footer__social-links {
+    justify-content: start;
+  }
 }
 
 .banner__bgimg {
@@ -519,7 +544,11 @@ img {
 }
 
 .contact {
-  padding: 1.5em 5em;
+  background-color: #cacaca;
+}
+
+.contact__container {
+  padding: 1.5em 2em;
 }
 
 .contact__subheader {
@@ -527,14 +556,8 @@ img {
 }
 
 .contact__inner {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 50%;
-  padding: 2em 1em;
   margin: 0 auto;
   margin-top: 2em;
-  background: #cacaca;
   color: #fff;
   border-radius: 0.25rem;
 }
@@ -592,6 +615,12 @@ img {
   }
   .experience .skills__container {
     margin-top: 0;
+  }
+  .contact__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
   }
 }
 

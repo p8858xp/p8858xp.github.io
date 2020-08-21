@@ -171,19 +171,17 @@
   }
 }
 .contact {
-  padding: $pad-large;
+  background-color: #cacaca;
+  &__container {
+    padding: $pad-small;
+  }
   &__subheader {
     font-size: 1.5rem;
   }
   &__inner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 50%;
-    padding: 2em 1em;
+    //padding: 2em 1em;
     margin: 0 auto;
     margin-top: 2em;
-    background: #cacaca;
     color: #fff;
     border-radius: 0.25rem;
   }
@@ -240,6 +238,14 @@
       &__container {
         margin-top: 0;
       }
+    }
+  }
+  .contact {
+    &__inner {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 50%;
     }
   }
 }
